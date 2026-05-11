@@ -123,10 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="5.11\HW5.11_4.cpp" />
+    <ClCompile Include="5.12\HW5.11_4.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="5.11\human.h" />
+    <ClInclude Include="5.12\human.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
