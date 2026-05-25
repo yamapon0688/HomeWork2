@@ -5,11 +5,14 @@ using namespace std;
 class Human
 {
 private:
-	const char* name;
+	char* name;
 	double height;
 	double weight;
 public:
-	Human(const char* name, double height, double weight);
+	Human(char* name, double height, double weight);
+	Human(const Human& other);
+	~Human();
+	void operator=(const Human& other);
 	void drawName() 
 	{ 
 		cout << name << endl;
@@ -35,6 +38,7 @@ public:
 		return weight;
 	}
 
+	void ShowInfo();
 	void grow_fat(double fatWeight);
 	void slim_off(double slimWeight);
 };
