@@ -1,6 +1,6 @@
 #include "Human.h"
 void HumanShowInfo(Human human);
-
+/*
 int main()
 {
 	char name[] = "human";
@@ -27,4 +27,4 @@ void HumanShowInfo(Human human)
 	human.ShowInfo();
 }
 
-
+*/
