@@ -9,14 +9,17 @@ int main()
 	Hero hero(100, 10, 0);
 	Goblin goblin(50, 5, 10);
 
+	// ゲームが始まる前のステータス表示
 	cout << "Hero" << endl
 		<< "hp    : " << hero.GetHp() << endl
 		<< "power : " << hero.GetPower() << endl
 		<< "exp   : " << hero.GetExp() << endl << endl;
+
 	cout << "Goblin" << endl
 		<< "hp      : " << goblin.GetHp() << endl
 		<< "power   : " << goblin.GetPower() << endl
 		<< "dropExp : " << goblin.GetDropExp() << endl << endl;
+
 	while (true)
 	{
 		char input;
@@ -50,6 +53,5 @@ int main()
 			cout << "Hero.Exp : " << hero.GetExp() << endl;
 			break;
 		}
-		cout << endl;
 	}
 }
