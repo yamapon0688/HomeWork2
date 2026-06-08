@@ -9,7 +9,6 @@ int main()
 	Hero hero(100, 10, 0);
 	Goblin goblin(50, 5, 10);
 
-	// ゲームが始まる前のステータス表示
 	cout << "Hero" << endl
 		<< "hp    : " << hero.GetHp() << endl
 		<< "power : " << hero.GetPower() << endl
