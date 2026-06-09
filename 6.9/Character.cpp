@@ -1,7 +1,4 @@
 #include "Character.h"
-#include <cstring>
-#include <iostream>
-using namespace std;
 
 void Character::Attack(Character& target)
 {

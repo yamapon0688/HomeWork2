@@ -7,7 +7,7 @@ protected:
 
 public:
 	
-	void Attack(Character& target);
+	virtual void Attack(Character& target);
 	void TakeDamage(int damage);
 	int GetHp();
 	int GetPower();

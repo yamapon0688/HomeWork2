@@ -1,13 +1,15 @@
-#include "Character.h"
 #include "Hero.h"
 #include "Goblin.h"
+#include <ctime>
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	Hero hero(100, 10, 0);
-	Goblin goblin(50, 5, 10);
+	srand((unsigned int)time(NULL));
+	Hero hero(100, 10, 10);
+	Goblin goblin(50, 5, 10 + rand() % 11);
 
 	cout << "Hero" << endl
 		<< "hp    : " << hero.GetHp() << endl
@@ -27,15 +29,23 @@ int main()
 		cout << "Goblin.hp : " << goblin.GetHp() << endl;
 		cout << "Attack h:Hero, g:Goblin > " << flush;
 		cin >> input;
+		Character* attacker = nullptr;
+		Character* target = nullptr;
+		
 		if (input == 'h')
 		{
-			cout << "Attack Hero->Goblin" << endl;
-			hero.Attack(goblin);
+			attacker = &hero;
+			target = &goblin;
 		}
 		else if (input == 'g')
 		{
-			cout << "Attack Goblin->Hero" << endl;
-			goblin.Attack(hero);
+			attacker = &goblin;
+			target = &hero;
+		}
+
+		if (attacker != nullptr && target != nullptr)
+		{
+			attacker->Attack(*target);
 		}
 		cout << endl;
 
