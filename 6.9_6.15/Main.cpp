@@ -25,7 +25,7 @@ int main()
 
 	while (true)
 	{
-		char input;
+		char actionInput;
 		int goblinSelectInput;
 		cout << "Hero.hp   : " << hero.GetHp() << endl;
 		for (int i = 0; i < goblinLength; i++)
@@ -37,8 +37,8 @@ int main()
 		while (true)
 		{
 			cout << "a:Attack d:Defense > " << flush;
-			cin >> input;
-			if (input == 'a' || input == 'd')
+			cin >> actionInput;
+			if (actionInput == 'a' || actionInput == 'd')
 			{
 				break;
 			}
@@ -47,7 +47,7 @@ int main()
 				cout << "–³Œø‚È•¶Žš‚Å‚·B" << endl;
 			}
 		}
-		if (input == 'a')
+		if (actionInput == 'a')
 		{
 			int index = 0;
 			while (true)
@@ -82,7 +82,7 @@ int main()
 			cout << "Attack Hero -> Goblin" << goblinSelectInput << endl;
 			hero.Attack(goblin[index]);
 		}
-		else if (input == 'd')
+		else if (actionInput == 'd')
 		{
 			hero.SetDefence(true);
 		}
