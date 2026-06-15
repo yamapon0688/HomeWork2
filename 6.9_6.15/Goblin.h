@@ -7,7 +7,8 @@ private:
 	int dropExp;
 
 public:
-	Goblin(int hp, int power, int dropExp);
+	Goblin(double hp, double power, int dropExp);
+	Goblin();
 	int GetDropExp();
 };
 

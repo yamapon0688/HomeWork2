@@ -126,16 +126,16 @@
     <ClCompile Include="5.12_5.26\260526_Main.cpp" />
     <ClCompile Include="5.12_5.26\Human.cpp" />
     <ClCompile Include="5.12_5.26\260512_Main.cpp" />
-    <ClCompile Include="6.9\Character.cpp" />
-    <ClCompile Include="6.9\Goblin.cpp" />
-    <ClCompile Include="6.9\Hero.cpp" />
-    <ClCompile Include="6.9\Main.cpp" />
+    <ClCompile Include="6.9_6.15\Character.cpp" />
+    <ClCompile Include="6.9_6.15\Goblin.cpp" />
+    <ClCompile Include="6.9_6.15\Hero.cpp" />
+    <ClCompile Include="6.9_6.15\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="5.12_5.26\Human.h" />
-    <ClInclude Include="6.9\Character.h" />
-    <ClInclude Include="6.9\Goblin.h" />
-    <ClInclude Include="6.9\Hero.h" />
+    <ClInclude Include="6.9_6.15\Character.h" />
+    <ClInclude Include="6.9_6.15\Goblin.h" />
+    <ClInclude Include="6.9_6.15\Hero.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

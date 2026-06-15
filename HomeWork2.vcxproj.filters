@@ -24,16 +24,16 @@
     <ClCompile Include="5.12_5.26\260526_Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="6.9\Character.cpp">
+    <ClCompile Include="6.9_6.15\Character.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="6.9\Hero.cpp">
+    <ClCompile Include="6.9_6.15\Hero.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="6.9\Main.cpp">
+    <ClCompile Include="6.9_6.15\Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="6.9\Goblin.cpp">
+    <ClCompile Include="6.9_6.15\Goblin.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,13 +41,13 @@
     <ClInclude Include="5.12_5.26\Human.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="6.9\Character.h">
+    <ClInclude Include="6.9_6.15\Character.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="6.9\Hero.h">
+    <ClInclude Include="6.9_6.15\Hero.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="6.9\Goblin.h">
+    <ClInclude Include="6.9_6.15\Goblin.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

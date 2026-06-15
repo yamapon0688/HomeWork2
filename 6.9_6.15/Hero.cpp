@@ -1,15 +1,13 @@
 #include "Hero.h"
-#include "Character.h"
-#include <cstring>
 
-Hero::Hero(int hp, int power, int exp)
+Hero::Hero(double hp, double power, int exp)
 {
 	this->hp = hp;
 	this->power = power;
 	this->exp = exp;
 }
 
-void Hero::AddExp(int dropExp)
+void Hero::AddExp(const int dropExp)
 {
 	this->exp += dropExp;
 }

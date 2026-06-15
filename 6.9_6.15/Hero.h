@@ -7,7 +7,7 @@ private:
 	int exp;
 
 public:
-	Hero(int hp, int power, int exp);
-	void AddExp(int dropExp);
+	Hero(double hp, double power, int exp);
+	void AddExp(const int dropExp);
 	int GetExp();
 };
