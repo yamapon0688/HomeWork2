@@ -7,7 +7,8 @@ private:
 	int dropExp;
 
 public:
-	Goblin(double hp, double power, int dropExp);
+	Goblin(double maxHp, double hp, double power, int dropExp);
+	void Attack(Character& target) override;
 	Goblin();
 	int GetDropExp();
 };

@@ -35,6 +35,10 @@ bool Character::GetIsDead()
 	return isDead;
 }
 
+double Character::GetMaxHp()
+{
+	return maxHp;
+}
 double Character::GetHp()
 {
 	return hp;

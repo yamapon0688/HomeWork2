@@ -7,7 +7,8 @@ private:
 	int exp;
 
 public:
-	Hero(double hp, double power, int exp);
+	Hero(double maxHp, double hp, double power, int exp);
+	void Attack(Character& target) override;
 	void AddExp(const int dropExp);
 	int GetExp();
 };
