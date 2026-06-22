@@ -8,7 +8,7 @@ int main()
 {
 	srand((unsigned int)time(NULL));
 	Hero hero(100.0, 100.0, 10.0, 25);
-	Goblin goblin[3];
+	Goblin goblin[4];
 
 	cout << "Hero" << endl
 		<< "maxHp : " << hero.GetMaxHp() << endl
@@ -26,9 +26,11 @@ int main()
 	}
 
 	int goblinLength = sizeof(goblin) / sizeof(Goblin);
-
+	int turnCount = 0;
 	while (true)
 	{
+		turnCount++;
+		cout << "turnCount : " << turnCount << " ----------------------------" << endl << endl;
 		char actionInput;
 		int goblinSelectInput;
 		cout << "Hero.hp   : " << hero.GetHp() << endl;
@@ -36,6 +38,8 @@ int main()
 		{
 			cout << "Goblin" << i + 1 << ".hp : " << goblin[i].GetHp() << endl;
 		}
+
+		cout << endl;
 
 		cout << "PLAYER TURN" << endl;
 		while (true)
@@ -103,7 +107,7 @@ int main()
 		if (goblinDeadCount == goblinLength)
 		{
 			int getExp = 0;
-			cout << "Win" << endl;
+			cout << "WIN" << endl;
 			for (int i = 0; i < goblinLength; i++)
 			{
 				hero.AddExp(goblin[i].GetDropExp());
@@ -131,7 +135,7 @@ int main()
 
 		if (hero.GetIsDead())
 		{
-			cout << "GameOver" << endl;
+			cout << "GAME OVER" << endl;
 			break;
 		}
 
