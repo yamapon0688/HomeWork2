@@ -9,6 +9,7 @@ void Character::Attack(Character& target)
 		damage /= 2;
 	}
 	target.TakeDamage(damage);
+	ExtraAttack(target);
 }
 
 void Character::TakeDamage(const double damage)

@@ -9,10 +9,8 @@ Goblin::Goblin(double maxHp, double hp, double power, int dropExp)
 	this->dropExp = dropExp;
 }
 
-void Goblin::Attack(Character& target)
+void Goblin::ExtraAttack(Character& target)
 {
-	// ’ÊíUŒ‚‚Ìˆ—
-	Character::Attack(target);
 	double extraDamage = 0;
 	// ƒSƒuƒŠƒ“‘¤‚Í‘Ì—Í‚ª30%ˆÈ‰º‚¾‚Á‚½‚çƒpƒ[‚ª‚Q”{
 	if (this->hp <= this->maxHp * 0.3)

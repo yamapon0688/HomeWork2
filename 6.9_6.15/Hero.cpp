@@ -10,10 +10,8 @@ Hero::Hero(double maxHp, double hp, double power, int exp)
 	this->exp = exp;
 }
 
-void Hero::Attack(Character& target)
+void Hero::ExtraAttack(Character& target)
 {
-	// 通常攻撃の処理
-	Character::Attack(target);
 	// ヒーロー側は確率でクリティカルを出す
 	double criticalMultiplier = 2;
 	double criticalChance = 50;

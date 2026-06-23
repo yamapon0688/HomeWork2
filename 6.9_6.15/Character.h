@@ -9,8 +9,10 @@ protected:
 	bool isDead = false;
 
 public:
-	
-	virtual void Attack(Character& target);
+
+	virtual ~Character() {}
+	virtual void ExtraAttack(Character& target) = 0;
+	void Attack(Character& target);
 	
 	void TakeDamage(const double damage);
 	void SetDefence(const bool mode);

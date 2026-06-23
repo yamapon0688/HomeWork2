@@ -87,7 +87,9 @@ int main()
 				}
 			}
 			cout << "Attack Hero -> Goblin" << goblinSelectInput << endl;
-			hero.Attack(goblin[index]);
+			Character* attacker = &hero;
+			Character* target = &goblin[index];
+			attacker->Attack(*target);
 		}
 		else if (actionInput == 'd')
 		{
@@ -127,7 +129,9 @@ int main()
 				if (goblin[i].GetIsDead() == false)
 				{
 					cout << "Attack Goblin" << i + 1 << " -> Hero" << endl;
-					goblin[i].Attack(hero);
+					Character* attacker = &goblin[i];
+					Character* target = &hero;
+					attacker->Attack(*target);
 				}
 			}
 		}
